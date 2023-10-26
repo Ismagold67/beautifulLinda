@@ -217,9 +217,10 @@ a {
     }
 }
 @media screen and (max-width: 768px) {
-    .options-after-click{
+    /* .options-after-click{
         display: flex;
-    }
+        background-color: red;
+    } */
     .centabout{
         flex-direction: column;
         gap: 10px;

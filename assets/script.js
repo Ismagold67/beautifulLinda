@@ -27,20 +27,23 @@ window.addEventListener('resize', () => {
 showDiv.addEventListener('click', () => {
     showDiv.classList.add('d-none')
     container.classList.add('d-none')
-    showedDiv.classList.remove('d-none')
+    //showedDiv.classList.remove('d-none')
+    showedDiv.style.display = 'flex'
 })
 
 buttonClose.addEventListener('click', () => {
     container.classList.remove('d-none')
     showDiv.classList.remove('d-none')
-    showedDiv.classList.add('d-none')
+    //showedDiv.classList.add('d-none')
+    showedDiv.style.display = 'none'
 })
 
 liA.forEach(clique => {
     clique.addEventListener('click', () => {
         container.classList.remove('d-none')
         showDiv.classList.remove('d-none')
-        showedDiv.classList.add('d-none')
+        //showedDiv.classList.add('d-none')
+        showedDiv.style.display = 'none'
     })
 })
 
