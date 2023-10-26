@@ -245,9 +245,10 @@ a {
         align-items: center;
         justify-content: center;
     }
-    .botton-after .bi-list {
+    .botton-after img {
         color: rgb(253, 253, 253);
-        max-width: 90px;
+        width: 70%;
+        display: flex;
     }
     .options-after-click {
         height: 100vh;
