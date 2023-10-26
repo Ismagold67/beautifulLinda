@@ -21,29 +21,24 @@ resizeWindow(pageWidth, bottonAfter)
 window.addEventListener('resize', () => {
     var pageWidth = window.innerWidth
     resizeWindow(pageWidth, bottonAfter)
-    console.log(pageWidth)
-    console.log(bottonAfter.classList.contains('d-none'))
 })
 showDiv.addEventListener('click', () => {
     showDiv.classList.add('d-none')
     container.classList.add('d-none')
-    //showedDiv.classList.remove('d-none')
-    showedDiv.style.display = 'flex'
+    showedDiv.classList.remove('d-none')
 })
 
 buttonClose.addEventListener('click', () => {
     container.classList.remove('d-none')
     showDiv.classList.remove('d-none')
-    //showedDiv.classList.add('d-none')
-    showedDiv.style.display = 'none'
+    showedDiv.classList.add('d-none')
 })
 
 liA.forEach(clique => {
     clique.addEventListener('click', () => {
         container.classList.remove('d-none')
         showDiv.classList.remove('d-none')
-        //showedDiv.classList.add('d-none')
-        showedDiv.style.display = 'none'
+        showedDiv.classList.add('d-none')
     })
 })
 

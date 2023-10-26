@@ -191,6 +191,9 @@ a {
 .info-contacts ul, .number-and-site ul{
     list-style: none;
 }
+.options-after-click {
+    display: none;
+}
 
 @media screen and (max-width: 1345px) {
     .table-joia header {
@@ -217,10 +220,6 @@ a {
     }
 }
 @media screen and (max-width: 768px) {
-    /* .options-after-click{
-        display: flex;
-        background-color: red;
-    } */
     .centabout{
         flex-direction: column;
         gap: 10px;
