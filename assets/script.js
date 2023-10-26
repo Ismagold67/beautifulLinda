@@ -6,15 +6,21 @@ const container = document.querySelector('.container-joia')
 const buttonClose = document.querySelector('.options-after-click svg')
 const liA = document.querySelectorAll('.lias')
 
-window.addEventListener('resize', () => {
-    var pageWidth = window.innerWidth
-    if (pageWidth <= 768) {
-        if(bottonAfter.classList.contains('d-none')) {
-            bottonAfter.classList.remove('d-none')
+var pageWidth = window.innerWidth
+
+const resizeWindow = (widthOfWindow, classe) => {
+    if (widthOfWindow <= 768) {
+        if(classe.classList.contains('d-none')) {
+            return classe.classList.remove('d-none')
         }
     } else {
-        bottonAfter.classList.add('d-none')
+        return classe.classList.add('d-none')
     }
+}
+resizeWindow(pageWidth, bottonAfter)
+window.addEventListener('resize', () => {
+    var pageWidth = window.innerWidth
+    resizeWindow(pageWidth, bottonAfter)
     console.log(pageWidth)
     console.log(bottonAfter.classList.contains('d-none'))
 })

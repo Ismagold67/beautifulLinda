@@ -85,29 +85,28 @@ a {
     justify-content: left;
 }
 .card-msg {
-    width: 45%;
-    margin-top: 16vh;
+    width: 100%;
+    margin-top: 14vh;
     color: #fff;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
     height: 78%;
     display: flex;
     font-weight: bolder;
-    align-items: last baseline;
+    align-items: center;
     justify-content: end;
     flex-direction: column;
 }
 .card-msg h1 {
-    font-size: 70px;
+    font-size: 4em;
 }
 .card-msg p{
-    font-size: 25px;
+    font-size: 2em;
 }
 
 .sobre{
     width: 100vw;
-    height: 75vh;
+    height: 60vh;
     display: flex;
-    overflow: hidden;
 }
 .centabout {
     width: 100%;
@@ -119,16 +118,16 @@ a {
 }
 .cardabout {
     width: 37%;
-    height: 80%;
+    height: 65%;
     font-size: 20px;
     text-align: justify;
     display: flex;
 }
 .cardabout div {
-   overflow: hidden;
    display: flex;
    flex-direction: column;
    font-weight: 600;
+   height: 15em;
 }
 .cardabout div h2{
     font-size: 25px;
@@ -229,7 +228,7 @@ a {
         height: 50%;
     }
     .cardabout div p{
-        font-size: 18px;
+        font-size: 20px;
     }
     .sobre {
         height: 900px;
@@ -278,9 +277,6 @@ a {
         max-width: 50px;
         width: 100%;
     }
-    .card-msg {
-        width: 65%;
-    }
     .card img {
         height: 17em;
     }
@@ -295,17 +291,44 @@ a {
         width: 70%;
         height: 25em;
     }
+    .card-msg {
+        align-items: first baseline;
+        margin-top: 16vh;
+        flex-wrap: wrap
+    }
 }
 
 @media screen and (max-width: 420px) {
     .card img {
         height: 13em;
     }
+    .orders .card {
+        width: 100%;
+    }
     .card-body {
-        height: 25vh;
+        height: 20vh;   
+        font-size: 24px;
+    }
+    .cardabout div p{
         font-size: 15px;
     }
     .btn{
         padding: 10px;
+    }
+    .card-msg p{
+        font-size: 1.3em;
+    }
+    #carouselExampleAutoplaying > div > div.carousel-item.active > div {
+        height: 70vh;
+        width: 100%;
+    }
+    #carouselExampleAutoplaying > div > div.carousel-item.active > div p{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 308px){
+    .card-body {
+        height: 20vh;   
+        font-size: 20px;
     }
 }
