@@ -196,9 +196,6 @@ a {
 }
 
 @media screen and (max-width: 1345px) {
-    .table-joia header {
-        
-    }
     .info-right ol li a{
         font-size: 20px;
     }
@@ -321,7 +318,6 @@ a {
         font-size: 1.3em;
     }
     #carouselExampleAutoplaying > div > div.carousel-item.active > div {
-        height: 70vh;
         width: 100%;
     }
     #carouselExampleAutoplaying > div > div.carousel-item.active > div p{
