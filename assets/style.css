@@ -217,7 +217,9 @@ a {
     }
 }
 @media screen and (max-width: 768px) {
-    
+    .options-after-click{
+        display: flex;
+    }
     .centabout{
         flex-direction: column;
         gap: 10px;
